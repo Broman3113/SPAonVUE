@@ -1,5 +1,9 @@
 # spavuejspractice
 
+## Lesson 1
+
+**Authorization** and working with the **router**
+
 ## Project setup
 ```
 npm install
@@ -32,19 +36,3 @@ npm run lint
 
 ### Customize configuration
 See [Configuration Reference](https://cli.vuejs.org/config/).
-
-# Local server setup
-
-```
-npm install
-```
-
-## Run server
-
-```
-npm run dev
-```
-
-# Spa on Vue.js lessons list
-
-* [Lesson 1](https://github.com/Broman3113/SPAonVUE/tree/Lesson-1)
