@@ -1,3 +1,9 @@
+# Spa on Vue.js lessons list
+
+* [Lesson 1](https://github.com/Broman3113/SPAonVUE/tree/Lesson-1)
+* [Lesson 2](https://github.com/Broman3113/SPAonVUE/tree/Lesson-2)
+
+
 # spavuejspractice
 
 ## Project setup
@@ -44,7 +50,3 @@ npm install
 ```
 npm run dev
 ```
-
-# Spa on Vue.js lessons list
-
-* [Lesson 1](https://github.com/Broman3113/SPAonVUE/tree/Lesson-1)
