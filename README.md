@@ -1,8 +1,8 @@
 # spavuejspractice
 
-## Lesson 1
+## Lesson 2
 
-**Authorization** and working with the **router**
+Working with **routing** and using **Element UI**
 
 ## Project setup
 ```

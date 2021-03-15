@@ -23,6 +23,16 @@ const routes: Array<RouteConfig> = [
         name: "About",
         component: About,
         meta: { requiresAuth: true }
+    },
+    {
+        path: "/info",
+        name: "Info",
+        component: () => import( /* webpackChunkName: "info" */  "@/views/Info.vue")
+    },
+    {
+        path: "*",
+        name: "404",
+        component: () => import(/* webpackChunkName: "404" */  "@/views/PageNotFound.vue")
     }
 ];
 
