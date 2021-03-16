@@ -152,7 +152,6 @@ header{
     @include animation(wave-message 1s);
   }
 }
-
 @include key-frame(boat) {
   0% {
     @include transform-origin(left);
@@ -179,7 +178,6 @@ header{
     @include transform(rotate(2deg) translate3d(-100vw, 0, 0px));
   }
 }
-
 @include key-frame(float) {
   0%,
   100% {
@@ -189,7 +187,6 @@ header{
     @include transform(rotate(-3deg) translate3d(0px, 10px, 0px));
   }
 }
-
 @include key-frame(surf) {
   0% {
     @include transform-origin(right);
