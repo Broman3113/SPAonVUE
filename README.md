@@ -1,8 +1,10 @@
 # spavuejspractice
 
-## Lesson 2
+## Lesson 3
 
-Working with **routing** and using **Element UI**
+Working with **Internationalization**
+
+Connect the plugin Vue i18n. Create files with translation and embed them. Implement language switcher in <header> component
 
 ## Project setup
 ```
