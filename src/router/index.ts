@@ -19,6 +19,12 @@ const routes: Array<RouteConfig> = [
     meta: { requiresAuth: true }
   },
   {
+    path: "post/:id",
+    name: "Article",
+    component: () => import("@/views/ArticlePage.vue"),
+    meta: { requiresAuth: true }
+  },
+  {
     path: "/about",
     name: "About",
     component: About,

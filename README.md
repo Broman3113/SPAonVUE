@@ -1,10 +1,10 @@
 # spavuejspractice
 
-## Lesson 3
+## Lesson 4
 
-Working with **Internationalization**
+Working with **Pages** and **Components**
 
-Connect the plugin Vue i18n. Create files with translation and embed them. Implement language switcher in <header> component
+Implement **Footer**, **Posts** and **Post page**
 
 ## Project setup
 ```
