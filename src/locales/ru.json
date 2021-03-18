@@ -14,5 +14,7 @@
     "added-title": "Добавил",
     "view-more-button": "Показать ещё",
     "back-button": "Вернуться к статьям"
-  }
+  },
+  "search":"Поиск",
+  "tooltip":"Изменить вид"
 }

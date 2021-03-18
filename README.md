@@ -1,10 +1,10 @@
 # spavuejspractice
 
-## Lesson 4
+## Lesson 5
 
-Working with **Pages** and **Components**
+Working with **Searching** and **Functional elements on page**
 
-Implement **Footer**, **Posts** and **Post page**
+Using **Vuex**,**Props**, **dynamic styles**  
 
 ## Project setup
 ```

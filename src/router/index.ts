@@ -2,7 +2,7 @@ import Vue from "vue";
 import VueRouter, { RouteConfig } from "vue-router";
 import Home from "../views/Home.vue";
 import About from "../views/About.vue";
-import LoginPage from "../views/LoginPage.vue"
+import LoginPage from "../views/LoginPage.vue";
 
 Vue.use(VueRouter);
 
@@ -10,7 +10,7 @@ const routes: Array<RouteConfig> = [
   {
     path: "/login",
     name: "Login",
-    component: LoginPage,
+    component: LoginPage
   },
   {
     path: "/",
@@ -19,7 +19,7 @@ const routes: Array<RouteConfig> = [
     meta: { requiresAuth: true }
   },
   {
-    path: "post/:id",
+    path: "/post/:id",
     name: "Article",
     component: () => import("@/views/ArticlePage.vue"),
     meta: { requiresAuth: true }
@@ -38,21 +38,23 @@ const routes: Array<RouteConfig> = [
 ];
 
 const router = new VueRouter({
-  mode: 'history',
+  mode: "history",
   routes
 });
 
 router.beforeEach((to, from, next) => {
   if (to.matched.some(record => record.meta.requiresAuth)) {
-    const authUser = JSON.parse(window.localStorage.getItem('currentUser') || '{}');
+    const authUser = JSON.parse(
+      window.localStorage.getItem("currentUser") || "{}"
+    );
     if (authUser && authUser.accessToken) {
       next();
     } else {
-      next({ name: 'Login' });
+      next({ name: "Login" });
     }
   } else {
-    next() // make sure to always call next()!
+    next(); // make sure to always call next()!
   }
-})
+});
 
 export default router;

@@ -5,7 +5,10 @@
       <div class="wave-7"></div>
       <div class="wave-6"></div>
       <router-link to="/" class="wave-island">
-        <img src="http://res.cloudinary.com/andrewhani/image/upload/v1524501929/404/island.svg" alt="Island">
+        <img
+          src="http://res.cloudinary.com/andrewhani/image/upload/v1524501929/404/island.svg"
+          alt="Island"
+        />
       </router-link>
       <div class="wave-5"></div>
       <div class="wave-lost wrp">
@@ -15,7 +18,11 @@
       </div>
       <div class="wave-4"></div>
       <div class="wave-boat">
-        <img class="boat" src="http://res.cloudinary.com/andrewhani/image/upload/v1524501894/404/boat.svg" alt="Boat">
+        <img
+          class="boat"
+          src="http://res.cloudinary.com/andrewhani/image/upload/v1524501894/404/boat.svg"
+          alt="Boat"
+        />
       </div>
       <div class="wave-3"></div>
       <div class="wave-2"></div>
@@ -29,7 +36,7 @@
 </template>
 
 <style lang="scss" scoped>
-@import url('https://fonts.googleapis.com/css?family=Open+Sans|PT+Sans+Narrow');
+@import url("https://fonts.googleapis.com/css?family=Open+Sans|PT+Sans+Narrow");
 $in-out-cubic: cubic-bezier(0.65, 0.05, 0.36, 1);
 @mixin transform($transform...) {
   -webkit-transform: $transform;
@@ -72,18 +79,18 @@ $in-out-cubic: cubic-bezier(0.65, 0.05, 0.36, 1);
   -o-animation-delay: $animation;
   animation-delay: $animation;
 }
-header{
+header {
   display: none;
 }
-.Error{
-  overflow:hidden;
-  font-family: 'Open Sans', sans-serif;
+.Error {
+  overflow: hidden;
+  font-family: "Open Sans", sans-serif;
 }
 .not-found {
   position: relative;
   overflow: hidden;
-  margin:0 -20vw;
-  height:100vh;
+  margin: 0 -20vw;
+  height: 100vh;
   [class*="wave"] {
     position: absolute;
   }
@@ -97,7 +104,7 @@ header{
         background: url(http://res.cloudinary.com/andrewhani/image/upload/v1524501869/404/wave-#{$i}.svg);
       }
     }
-    &.sky-bg{
+    &.sky-bg {
       background: url(http://res.cloudinary.com/andrewhani/image/upload/v1524821915/404/bg-1_gvybzk.svg);
       height: 100%;
     }
@@ -201,11 +208,11 @@ header{
     @include transform(rotate(0) translate3d(0, 0, 0px));
   }
 }
-@include key-frame(wave-message){
-  0%{
+@include key-frame(wave-message) {
+  0% {
     @include transform(translate3d(0, 120%, 0));
   }
-  100%{
+  100% {
     @include transform(translate3d(0, 0, 0));
   }
 }

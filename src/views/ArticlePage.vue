@@ -1,63 +1,72 @@
 <script lang="ts">
-import {Vue, Component } from 'vue-property-decorator';
+import { Vue, Component } from "vue-property-decorator";
+import { namespace } from "vuex-class";
+const Articles = namespace("Articles");
 
 @Component({
   name: "ArticlePage"
 })
 export default class ArticlePage extends Vue {
-  content = "";
-
-  created() {
-    this.content = this.$route.params.item
+  @Articles.Getter getById: any;
+  @Articles.State fromApi: any;
+  @Articles.Action fetchApi: any;
+  get articleById() {
+    return this.getById(this.$route.params.id);
   }
 
-  backToArticles(){
+  backToArticles() {
     this.$router.go(-1);
+  }
+  created() {
+    this.fetchApi();
   }
 }
 </script>
 
 <template>
-    <el-row type="flex" justify="center" class="article-page">
-      <el-col :xs="23" :sm="22" :md="20" :lg="16" :xl="16">
-        <h1>{{ content.title }}</h1>
-        <img :src="content.image" alt="post">
-        <p>
-          {{content.text}}
-        </p>
-        <el-divider>
-
-        </el-divider>
-        <el-row type="flex" justify="space-between">
-          <el-col :span="12" class="article-info text-left">
-            {{content.author}}
-          </el-col>
-          <el-col :span="12" class="article-info text-right">
-            {{content.postTime}}
-          </el-col>
-        </el-row>
-        <el-row type="flex" justify="center" class="article-control">
-          <el-col :span="12">
-            <el-button type="primary" @click="backToArticles">
-              {{$t("article.back-button")}}
-            </el-button>
-          </el-col>
-        </el-row>
-      </el-col>
-    </el-row>
+  <el-row type="flex" justify="center" class="article-page">
+    <el-col :xs="23" :sm="22" :md="20" :lg="16" :xl="16">
+      <div>
+        {{ fromApi }}
+      </div>
+      <h1>
+        {{ articleById.title }}
+      </h1>
+      <img :src="articleById.image" alt="post picture" />
+      <p>
+        {{ articleById.text }}
+      </p>
+      <el-divider></el-divider>
+      <el-row type="flex" justify="space-between">
+        <el-col :span="12" class="article-information text-left">
+          {{ articleById.autor }}
+        </el-col>
+        <el-col :span="12" class="article-information text-right">
+          {{ articleById.postTime }}
+        </el-col>
+      </el-row>
+      <el-row type="flex" justify="center" class="article-control">
+        <el-col :span="12">
+          <el-button @click="backToArticles" type="primary">{{
+            $t("article.back-button")
+          }}</el-button>
+        </el-col>
+      </el-row>
+    </el-col>
+  </el-row>
 </template>
 
 <style lang="scss" scoped>
-.article-page{
+.article-page {
   margin-bottom: 30px;
-  img{
+  img {
     width: 100%;
   }
 }
-.article-info{
+.article-information {
   color: #5c5c5c;
 }
-.article-control{
+.article-control {
   margin-top: 20px;
 }
 </style>
