@@ -4,7 +4,7 @@
 
 Working with **Searching** and **Functional elements on page**
 
-Using **Vuex**,**Props**, **dynamic styles**  
+Using **Vuex**, **Props**, **dynamic styles**  
 
 ## Project setup
 ```
