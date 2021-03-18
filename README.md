@@ -6,7 +6,6 @@
 * [Lesson 4](https://github.com/Broman3113/SPAonVUE/tree/Lesson-4)
 * [Lesson 5](https://github.com/Broman3113/SPAonVUE/tree/Lesson-5)
 
-
 # spavuejspractice
 
 ## Project setup
