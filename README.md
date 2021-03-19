@@ -4,7 +4,7 @@
 
 Working with **E2E** Testing (Cypress)
 
-##E2E testing startup
+## E2E testing startup
 ```
 npm run test:e2e
 ```
