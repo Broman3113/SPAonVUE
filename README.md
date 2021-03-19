@@ -1,10 +1,13 @@
 # spavuejspractice
 
-## Lesson 5
+## Lesson 6
 
-Working with **Searching** and **Functional elements on page**
+Working with **E2E** Testing (Cypress)
 
-Using **Vuex**, **Props**, **dynamic styles**  
+##E2E testing startup
+```
+npm run test:e2e
+```
 
 ## Project setup
 ```

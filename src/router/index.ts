@@ -21,7 +21,7 @@ const routes: Array<RouteConfig> = [
   {
     path: "/post/:id",
     name: "Article",
-    component: () => import("@/views/ArticlePage.vue"),
+    component: () => import(/* webpackChunkName: "ArticlePage" */ "@/views/ArticlePage.vue"),
     meta: { requiresAuth: true }
   },
   {
