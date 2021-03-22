@@ -1,12 +1,12 @@
 # spavuejspractice
 
-## Lesson 6
+## Lesson 7
 
-Working with **E2E** Testing (Cypress)
+Unit testing with **Jest**
 
-## E2E testing startup
+## Unit testing startup
 ```
-npm run test:e2e
+npm run test:unit
 ```
 
 ## Project setup
