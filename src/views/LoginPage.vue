@@ -40,7 +40,7 @@ export default class LoginPage extends Vue {
       if (valid) {
         // alert("submit!");
         axios
-          .post("http://localhost:3000/login", {
+          .post("https://spaonvue-server.herokuapp.com/login", {
             email: this.ruleForm.email,
             password: this.ruleForm.password
           })

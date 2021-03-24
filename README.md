@@ -1,8 +1,8 @@
 # spavuejspractice
 
-## Lesson 7
+## Lesson 8
 
-Unit testing with **Jest**
+**Finalization** of the project and **deploy** on a server
 
 ## Unit testing startup
 ```
