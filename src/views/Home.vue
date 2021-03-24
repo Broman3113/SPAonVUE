@@ -1,26 +1,77 @@
 <template>
   <div class="home">
-    <img alt="Vue logo" src="../assets/logo.png" />
-    <HelloWorld msg="Welcome to Your Vue.js App" />
-    <div>
-      <p>
-        If Element is successfully added to this project, you'll see an
-        <code v-text="'<el-button>'"></code>
-        below
-      </p>
-      <el-button>el-button</el-button>
+    <el-row type="flex" justify="center">
+      <el-col :span="12" class="articles-control">
+        <el-input :placeholder="$t('search')" v-model="searchValue"></el-input>
+        <el-tooltip
+          effect="dark"
+          :content="$t('tooltip')"
+          placement="top-start"
+        >
+          <el-button
+            type="primary"
+            :icon="viewMode ? 'el-icon-s-unfold' : 'el-icon-s-grid'"
+            circle
+            @click="changeView"
+          ></el-button>
+        </el-tooltip>
+      </el-col>
+    </el-row>
+    <div v-if="articles" :class="viewMode ? '' : 'block-view'">
+      <ArticleView
+        v-for="item in articles"
+        v-bind:key="item.id"
+        :item="item"
+        :search="searchValue"
+        :viewMode="viewMode"
+      ></ArticleView>
+    </div>
+    <div v-else>
+      {{ $t("empty-page") }}
     </div>
   </div>
 </template>
 
-<script>
-// @ is an alias to /src
-import HelloWorld from "@/components/HelloWorld.vue";
-
-export default {
-  name: "Home",
+<script lang="ts">
+import { Vue, Component } from "vue-property-decorator";
+import { namespace } from "vuex-class";
+import ArticleView from "../components/ArticleView.vue";
+const Articles = namespace('Articles');
+@Component({
   components: {
-    HelloWorld
+    ArticleView
   }
-};
+})
+export default class Home extends Vue {
+  @Articles.State articles: any;
+  @Articles.Action fetchApi: any;
+  searchValue: string = "";
+  viewMode: boolean = true;
+
+  changeView() {
+    this.viewMode = !this.viewMode;
+  }
+  created() {
+    this.fetchApi();
+  }
+}
 </script>
+<style lang="scss" scoped>
+.articles-control {
+  .el-input {
+    display: inline-block;
+    width: 250px;
+    margin: 0 5px 0 0;
+    @media (max-width: 768px) {
+      display: block;
+      width: 100%;
+      margin: 0 0 10px 0;
+    }
+  }
+}
+.block-view {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+}
+</style>

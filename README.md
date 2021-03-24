@@ -7,9 +7,11 @@
 * [Lesson 5](https://github.com/Broman3113/SPAonVUE/tree/Lesson-5)
 * [Lesson 6](https://github.com/Broman3113/SPAonVUE/tree/Lesson-6)
 * [Lesson 7](https://github.com/Broman3113/SPAonVUE/tree/Lesson-7)
-
+* [Lesson 8](https://github.com/Broman3113/SPAonVUE/tree/Lesson-8)
 
 # spavuejspractice
+
+* [Deployed site](https://sharp-lichterman-26941e.netlify.app)
 
 ## Project setup
 ```

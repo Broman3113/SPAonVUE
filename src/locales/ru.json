@@ -1,0 +1,20 @@
+{
+  "empty-page": "Страница пуста :(",
+  "menu":{
+    "home":"Главная",
+    "info":"Инфо",
+    "about":"О нас"
+  },
+  "buttons":{
+    "button-logout":"Выход"
+  },
+  "footer-text": "Freebie разработано Kishore для Project365.Design",
+  "article": {
+    "destination-title": "Назначение",
+    "added-title": "Добавил",
+    "view-more-button": "Показать ещё",
+    "back-button": "Вернуться к статьям"
+  },
+  "search":"Поиск",
+  "tooltip":"Изменить вид"
+}
