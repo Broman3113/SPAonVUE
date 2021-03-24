@@ -72,6 +72,8 @@ export default class LoginPage extends Vue {
     <el-col :span="6">
       <div>
         <h1>Login</h1>
+        <h2>test@gmail.com</h2>
+        <h2>123456</h2>
         <el-form
           :model="ruleForm"
           status-icon
