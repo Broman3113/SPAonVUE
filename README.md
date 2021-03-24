@@ -9,51 +9,36 @@
 * [Lesson 7](https://github.com/Broman3113/SPAonVUE/tree/Lesson-7)
 * [Lesson 8](https://github.com/Broman3113/SPAonVUE/tree/Lesson-8)
 
+
 # spavuejspractice
 
 * [Deployed site](https://sharp-lichterman-26941e.netlify.app)
 
 ## Project setup
-```
 npm install
-```
 
 ### Compiles and hot-reloads for development
-```
 npm run serve
-```
 
 ### Compiles and minifies for production
-```
 npm run build
-```
 
 ### Run your unit tests
-```
 npm run test:unit
-```
 
 ### Run your end-to-end tests
-```
 npm run test:e2e
-```
 
 ### Lints and fixes files
-```
 npm run lint
-```
 
 ### Customize configuration
 See [Configuration Reference](https://cli.vuejs.org/config/).
 
 # Local server setup
 
-```
 npm install
-```
 
 ## Run server
 
-```
 npm run dev
-```
