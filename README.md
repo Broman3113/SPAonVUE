@@ -49,7 +49,7 @@ See [Configuration Reference](https://cli.vuejs.org/config/).
 
 # Local server setup
 
-[Local server](https://github.com/Broman3113/SPAonVUE-server)
+* [Local server](https://github.com/Broman3113/SPAonVUE-server)
 
 ```
 npm install
