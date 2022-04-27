@@ -12,7 +12,7 @@
 
 # spavuejspractice
 
-* [Deployed site](https://vuejs-practicing.netlify.app/login)
+* [Deployed site](https://vuejs-practicing.netlify.app)
 
 ## Project setup
 ```
